@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Table</title>
+    <link rel="stylesheet" href="sf.css">
+</head>
+<body>
+<center>
+<h2>STUDENT FORM</h2>
+
+<table border="1" width="50%">
+    <tr>
+        <th>Name</th>
+        <td><input type="text" id="name" value="Mohan"></td>
+    </tr>
+    <tr>
+        <th>Age</th>
+        <td><input type="number" id="age" value="19"></td>
+    </tr>
+    <tr>
+        <th>Gender</th>
+        <td>
+            <input type="radio" name="gender" value="male"> Male
+            <input type="radio" name="gender" value="female"> Female
+        </td>
+    </tr>
+    <tr>
+        <th>Course</th>
+        <td><input type="text" id="course" value="JavaScript"></td>
+    </tr>
+    <tr>
+        <th>Email</th>
+        <td><input type='email' id="email" placeholder="Enter your email"></td>
+    </tr>
+    <tr>
+        <td colspan="2">
+            <button class="button" onclick="save()">SAVE</button>
+        </td>
+    </tr>
+</table>
+
+<table border="1" width="50%" id="table">
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Course</th>
+        <th>Gender</th>
+        <th>Email</th>
+        <th>Action</th>
+    </tr>
+    <tr>
+        <td>Amal</td>
+        <td>23</td>
+        <td>PYTHON</td>
+        <td>Male</td>
+        <td>mohan@gmail.com</td>
+        <td><button onclick="deleteitems(event)">DELETE</button></td>
+    </tr>
+    <tr>
+        <td>MOHAN</td>
+        <td>19</td>
+        <td>JAVASCRIPT</td>
+        <td>Male</td>
+        <td>mohan19@gmail.com</td>
+        <td><button onclick="deleteitems(event)">DELETE</button></td>
+    </tr>
+</table>
+</center>
+<script src="sf.js"></script>
+</body>
+</html>
